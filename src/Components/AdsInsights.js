@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {  useNavigate } from 'react-router-dom'; // Import useNavigate
+import YouTube from './YouTube';
 
 const AdsInsights = () => {
   const [showChart, setShowChart] = useState(true);
@@ -25,7 +26,7 @@ const AdsInsights = () => {
     <div>
       <h2>Ads Insights</h2>
       <button onClick={() => setShowChart(!showChart)}>Toggle Chart</button>
-
+     <YouTube/>
       {/* Rest of your component */}
     </div>
   );
